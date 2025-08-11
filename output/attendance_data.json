@@ -1,0 +1,65 @@
+[
+    {
+        "Sl.No.": "1",
+        "Subject": "DLD",
+        "Held": "18",
+        "Attend": "16",
+        "%": "88.89"
+    },
+    {
+        "Sl.No.": "2",
+        "Subject": "JP",
+        "Held": "0",
+        "Attend": "0",
+        "%": ".00"
+    },
+    {
+        "Sl.No.": "3",
+        "Subject": "PS",
+        "Held": "0",
+        "Attend": "0",
+        "%": ".00"
+    },
+    {
+        "Sl.No.": "4",
+        "Subject": "DM",
+        "Held": "11",
+        "Attend": "9",
+        "%": "81.82"
+    },
+    {
+        "Sl.No.": "5",
+        "Subject": "DMS",
+        "Held": "0",
+        "Attend": "0",
+        "%": ".00"
+    },
+    {
+        "Sl.No.": "6",
+        "Subject": "SL Lab",
+        "Held": "12",
+        "Attend": "12",
+        "%": "100.00"
+    },
+    {
+        "Sl.No.": "7",
+        "Subject": "JP Lab",
+        "Held": "3",
+        "Attend": "3",
+        "%": "100.00"
+    },
+    {
+        "Sl.No.": "8",
+        "Subject": "DMS Lab",
+        "Held": "9",
+        "Attend": "6",
+        "%": "66.67"
+    },
+    {
+        "Sl.No.": "9",
+        "Subject": "ES",
+        "Held": "0",
+        "Attend": "0",
+        "%": ".00"
+    }
+]

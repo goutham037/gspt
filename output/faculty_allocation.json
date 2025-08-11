@@ -1,0 +1,56 @@
+[
+  {
+    "Subject Code": "DLD",
+    "Subject": "Digital Logic Design",
+    "Faculty Name": "TAKKELLAPATI. SUNEETHA",
+    "Initials": ""
+  },
+  {
+    "Subject Code": "JP",
+    "Subject": "Java Programming",
+    "Faculty Name": "K A SATHISH KUMAR",
+    "Initials": ""
+  },
+  {
+    "Subject Code": "PS",
+    "Subject": "Probability And Statistics",
+    "Faculty Name": "S VIJAY PRASAD",
+    "Initials": ""
+  },
+  {
+    "Subject Code": "DM",
+    "Subject": "Discrete Mathematics",
+    "Faculty Name": "GURRAM. VIJENDAREDDY",
+    "Initials": ""
+  },
+  {
+    "Subject Code": "DMS",
+    "Subject": "Database Management Systems",
+    "Faculty Name": "YERAGUDIPATI. LALITHA",
+    "Initials": ""
+  },
+  {
+    "Subject Code": "SL Lab",
+    "Subject": "Scripting Languages Lab",
+    "Faculty Name": "M.SRAVANI,SHAMAL TELKAR,SHAMAL TELKAR",
+    "Initials": ""
+  },
+  {
+    "Subject Code": "JP Lab",
+    "Subject": "Java Programming Lab",
+    "Faculty Name": "BODA. SINDHUJA,SAYALI DESHMUKH",
+    "Initials": ""
+  },
+  {
+    "Subject Code": "DMS Lab",
+    "Subject": "Database Management Systems Lab",
+    "Faculty Name": "S RITWIKA,AJEEB SOUMYA",
+    "Initials": ""
+  },
+  {
+    "Subject Code": "ES",
+    "Subject": "Environmental Science",
+    "Faculty Name": "AKSHINTHALA PARAMESWARI",
+    "Initials": ""
+  }
+]

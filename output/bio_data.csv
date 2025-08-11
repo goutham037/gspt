@@ -1,0 +1,70 @@
+Section,Subsection,Field,Value
+BioData,,Branch,CSE
+BioData,,Semester,II/IV B.Tech I Semester
+BioData,,Gender,Female
+BioData,,DOB,22/02/2007
+BioData,,Nationality,Indian
+BioData,,Religion,Hindu
+BioData,,Entrance Type,EAMCET
+BioData,,EAMCET/ECET Rank,6556
+BioData,,Seat Type,Convener-Full Reimbursement
+BioData,,Category & Caste,"OC, OC"
+BioData,,Last Studied,SRI CHAITHANYA JUNIOR KALASALA
+BioData,,Joining Date,14/08/2024
+BioData,,Mobile.No,7815928247
+BioData,,Aadhar.No,401410068968
+BioData,,Scholarship,Yes
+BioData,,"Qualification	Board	H.T.No	Year
+Of
+Pass	Institute	Max.Marks	Obtained
+Marks	Grade
+Letter	Grade
+Points
+S.S.C	BSE	2205107640	2022	AKSHARA HIGH SCHOOL	10	9.7		
+Inter	BIE	2458255307	2024	SRI CHAITHANYA JUNIOR KALASALA	1000	981",Board
+BioData,,H.T.No,Institute
+BioData,,Qualification,H.T.No
+BioData,,"Year
+Of
+Pass",Max.Marks
+BioData,,S.S.C,2205107640
+BioData,,2022,10
+BioData,,Inter,2458255307
+BioData,,2024,1000
+BioData,,Father Name,THURPU MADHUKARRAO
+BioData,,Occupation,HOUSEWIFE
+BioData,,Mother Name,THURPU MEGHANA
+BioData,,Father Mobile.No,9908198227
+BioData,,Mother Mobile.No,9849140130
+BioData,,Annual Income,115000
+BioData,,Father mailid,RAOMADHUKAR88@GMAIL.COM
+BioData,,Correspondence Address,3-93/A CH KONDORU NANDIPET NIZAMABAD TELANGANA 503212
+BioData,,Permanent Address,3-93/A CH KONDORU NANDIPET NIZAMABAD TELANGANA 503212
+BioData,,Place of birth,NIZAMABAD
+BioData,,Type of place,Urban
+BioData,,Staying at,Parent
+BioData,,Staying address,"3/93/A CH.KONDOOR,MDL:NANDIPET,DIST:NIZAMABAD"
+Education,School (SSC),Board,
+Education,School (SSC),HallTicketNo,
+Education,School (SSC),YearOfPass,
+Education,School (SSC),Institute,
+Education,School (SSC),MaxMarks,
+Education,School (SSC),Obtained,
+Education,School (SSC),GradeLetter,
+Education,School (SSC),GradePoints,
+Education,Intermediate,Board,
+Education,Intermediate,HallTicketNo,
+Education,Intermediate,YearOfPass,
+Education,Intermediate,Institute,
+Education,Intermediate,MaxMarks,
+Education,Intermediate,Obtained,
+Education,Intermediate,GradeLetter,
+Education,Intermediate,GradePoints,
+Education,Diploma,Board,
+Education,Diploma,HallTicketNo,
+Education,Diploma,YearOfPass,
+Education,Diploma,Institute,
+Education,Diploma,MaxMarks,
+Education,Diploma,Obtained,
+Education,Diploma,GradeLetter,
+Education,Diploma,GradePoints,

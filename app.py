@@ -297,7 +297,57 @@ async def fetch_timetable_and_calendar(username: str, password: str):
             "faculty_allocation": faculty,
             "academic_calendar": calendar,
         }
+# ----------------- Single-roll result scraper & Flask route -----------------
+async def scrape_griet_result(roll_number: str):
+    """
+    Scrape GRIET result for a single roll number.
+    Returns: {"headers": [...], "rows": [[...], ...]}
+    """
+    url = "https://share.google/gRCrPbNPt35EwEUJW"  # main page that opens getresult.php in a new tab
 
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=HEADLESS)
+        context = await browser.new_context()
+        page = await context.new_page()
+
+        await page.goto(url, timeout=60000)
+        await page.fill('input[name="rollno"]', roll_number)
+
+        # click submit and wait for the new tab that contains results
+        async with context.expect_page() as new_page_info:
+            await page.click('input[name="submit"]')
+        result_page = await new_page_info.value
+
+        # wait for the table (try two selectors)
+        try:
+            await result_page.wait_for_selector("table.collapse", timeout=10000)
+            table = await result_page.query_selector("table.collapse")
+        except Exception:
+            await result_page.wait_for_selector("table[border='1']", timeout=10000)
+            table = await result_page.query_selector("table[border='1']")
+
+        if not table:
+            await browser.close()
+            return {"headers": [], "rows": []}
+
+        # extract headers
+        header_cells = await table.query_selector_all("tr:first-child td, tr:first-child th")
+        headers = [ (await c.inner_text()).strip() for c in header_cells ]
+
+        # extract body rows
+        rows_sel = await table.query_selector_all("tr")
+        rows = []
+        for r in rows_sel[1:]:  # skip header
+            cols = await r.query_selector_all("td")
+            if not cols:
+                continue
+            vals = [ (await c.inner_text()).strip() for c in cols ]
+            rows.append(vals)
+
+        await browser.close()
+        return {"headers": headers, "rows": rows}
+
+ 
 # ----------------- Flask app & HTTP endpoints -----------------
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})  # dev only
@@ -305,6 +355,43 @@ CORS(app, resources={r"/*": {"origins": "*"}})  # dev only
 @app.route('/')
 def index():
     return "Gokaraju scraper running. POST credentials to endpoints to fetch data."
+
+
+@app.route('/get-result', methods=['POST'])
+def http_get_result():
+    """
+    POST JSON body: { "rollno": "22WH1A0501" }
+    Returns JSON: { "rollno": "...", "result": { "headers": [...], "rows": [...] } }
+    """
+    try:
+        payload = request.get_json(force=True)
+        rn = payload.get("rollno")
+        if not rn:
+            return jsonify({"error": "Provide 'rollno' in JSON body."}), 400
+
+        # run the async scraper synchronously from Flask
+        result = asyncio.run(scrape_griet_result(str(rn).strip()))
+
+        # save JSON
+        out_json = OUTPUT_DIR / f"result_{rn}.json"
+        out_json.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+
+        # save CSV (if rows exist)
+        csv_path = OUTPUT_DIR / f"result_{rn}.csv"
+        with open(csv_path, "w", newline="", encoding="utf-8") as cf:
+            writer = csv.writer(cf)
+            if result.get("headers"):
+                writer.writerow(result["headers"])
+            else:
+                writer.writerow(["S.No", "Subject Code", "Subject Name", "Grade Point", "Grade", "Credits", "Result"])
+            for row in result.get("rows", []):
+                writer.writerow(row)
+
+        return jsonify({"rollno": rn, "result": result}), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 
 @app.route('/get-timetable-and-calendar', methods=['POST'])
 def http_get_timetable_and_calendar():

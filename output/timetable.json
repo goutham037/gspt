@@ -1,0 +1,68 @@
+[
+  {
+    "Day": "Mon",
+    "Period 1": "DMS Lab",
+    "Period 2": "DMS Lab",
+    "Period 3": "DMS Lab",
+    "Break": "",
+    "Period 4": "DLD",
+    "Period 5": "DLD",
+    "Period 6": "JP",
+    "Period 7": "JP"
+  },
+  {
+    "Day": "Tue",
+    "Period 1": "--",
+    "Period 2": "--",
+    "Period 3": "--",
+    "Break": "",
+    "Period 4": "--",
+    "Period 5": "--",
+    "Period 6": "--",
+    "Period 7": "--"
+  },
+  {
+    "Day": "Wed",
+    "Period 1": "JP Lab",
+    "Period 2": "JP Lab",
+    "Period 3": "JP Lab",
+    "Break": "",
+    "Period 4": "DMS",
+    "Period 5": "DMS",
+    "Period 6": "PS",
+    "Period 7": "PS"
+  },
+  {
+    "Day": "Thu",
+    "Period 1": "DM",
+    "Period 2": "DM",
+    "Period 3": "ES",
+    "Break": "",
+    "Period 4": "JP",
+    "Period 5": "JP",
+    "Period 6": "DMS",
+    "Period 7": "DLD"
+  },
+  {
+    "Day": "Fri",
+    "Period 1": "SL Lab",
+    "Period 2": "SL Lab",
+    "Period 3": "SL Lab",
+    "Break": "",
+    "Period 4": "DLD",
+    "Period 5": "DLD",
+    "Period 6": "DM",
+    "Period 7": "DM"
+  },
+  {
+    "Day": "Sat",
+    "Period 1": "DMS",
+    "Period 2": "DMS",
+    "Period 3": "DM",
+    "Break": "",
+    "Period 4": "PS",
+    "Period 5": "PS",
+    "Period 6": "JP",
+    "Period 7": "ES"
+  }
+]

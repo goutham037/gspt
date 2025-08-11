@@ -1,0 +1,72 @@
+{
+    "BioData": {
+        "Branch": "CSE",
+        "Semester": "II/IV B.Tech I Semester",
+        "Gender": "Female",
+        "DOB": "22/02/2007",
+        "Nationality": "Indian",
+        "Religion": "Hindu",
+        "Entrance Type": "EAMCET",
+        "EAMCET/ECET Rank": "6556",
+        "Seat Type": "Convener-Full Reimbursement",
+        "Category & Caste": "OC, OC",
+        "Last Studied": "SRI CHAITHANYA JUNIOR KALASALA",
+        "Joining Date": "14/08/2024",
+        "Mobile.No": "7815928247",
+        "Aadhar.No": "401410068968",
+        "Scholarship": "Yes",
+        "Qualification\tBoard\tH.T.No\tYear\nOf\nPass\tInstitute\tMax.Marks\tObtained\nMarks\tGrade\nLetter\tGrade\nPoints\nS.S.C\tBSE\t2205107640\t2022\tAKSHARA HIGH SCHOOL\t10\t9.7\t\t\nInter\tBIE\t2458255307\t2024\tSRI CHAITHANYA JUNIOR KALASALA\t1000\t981": "Board",
+        "H.T.No": "Institute",
+        "Qualification": "H.T.No",
+        "Year\nOf\nPass": "Max.Marks",
+        "S.S.C": "2205107640",
+        "2022": "10",
+        "Inter": "2458255307",
+        "2024": "1000",
+        "Father Name": "THURPU MADHUKARRAO",
+        "Occupation": "HOUSEWIFE",
+        "Mother Name": "THURPU MEGHANA",
+        "Father Mobile.No": "9908198227",
+        "Mother Mobile.No": "9849140130",
+        "Annual Income": "115000",
+        "Father mailid": "RAOMADHUKAR88@GMAIL.COM",
+        "Correspondence Address": "3-93/A CH KONDORU NANDIPET NIZAMABAD TELANGANA 503212",
+        "Permanent Address": "3-93/A CH KONDORU NANDIPET NIZAMABAD TELANGANA 503212",
+        "Place of birth": "NIZAMABAD",
+        "Type of place": "Urban",
+        "Staying at": "Parent",
+        "Staying address": "3/93/A CH.KONDOOR,MDL:NANDIPET,DIST:NIZAMABAD"
+    },
+    "Education": {
+        "School (SSC)": {
+            "Board": "",
+            "HallTicketNo": "",
+            "YearOfPass": "",
+            "Institute": "",
+            "MaxMarks": "",
+            "Obtained": "",
+            "GradeLetter": "",
+            "GradePoints": ""
+        },
+        "Intermediate": {
+            "Board": "",
+            "HallTicketNo": "",
+            "YearOfPass": "",
+            "Institute": "",
+            "MaxMarks": "",
+            "Obtained": "",
+            "GradeLetter": "",
+            "GradePoints": ""
+        },
+        "Diploma": {
+            "Board": "",
+            "HallTicketNo": "",
+            "YearOfPass": "",
+            "Institute": "",
+            "MaxMarks": "",
+            "Obtained": "",
+            "GradeLetter": "",
+            "GradePoints": ""
+        }
+    }
+}
